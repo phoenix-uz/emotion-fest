@@ -1,0 +1,97 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.timeline
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($palete, 'whiteGray')
+    padding: 50px 0s
+    .sectionTitleBlack
+        margin-bottom: 50px
+        text-align: center
+        .title
+            +typography(28px, 600, map-get($palete, 'textBlack'))
+    .timelineItems
+        margin: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        position: relative
+        width: 100%
+        &::before
+            content: ''
+            position: absolute
+            width: 2px
+            height: 100%
+            left: calc(50% - 1px)
+            border: 1px dashed map-get($palete, 'primary')
+            background-color: map-get($basic, 'white')
+            // @media screen and (max-width: 991px)
+            //     width: 2px
+            //     height: 100%
+            //     left: calc(50% - 1px)
+            @media screen and (max-width: 614px)
+                left: 7px
+        .timelineItem
+            width: 20%
+            position: relative
+            transition: all 0.5s ease
+            cursor: pointer
+            margin-bottom: 40px
+            width: 100%
+            height: 200px
+            @media screen and (max-width: 991px)
+                margin-bottom: 40px
+                width: 100%
+            &:hover
+                .timelineDot
+                    height: 20px
+                    width: 20px
+                .timelineTitle
+                    .title
+                        color: map-get($palete, 'primary')
+            // @media screen and (max-width: 991px)ы
+            &:nth-child(odd)
+                padding-right: calc(50% + 30px)
+                text-align: right
+            &:nth-child(even)
+                padding-left: calc(50% + 30px)
+            @media screen and (max-width: 614px)
+                &:nth-child(odd)
+                    padding-right: 0
+                    text-align: left
+                &:nth-child(odd),
+                &:nth-child(even)
+                    padding-left: 37px
+            .timelineTime
+                margin-top: 20px
+                .time
+                    margin: 0
+                    +typography(18px, 200, map-get($palete, 'secondary'))
+            .timelineDot
+                height: 16px
+                width: 16px
+                background-color: map-get($palete, 'primary')
+                position: absolute
+                left: -2px
+                top: -8px
+                border-radius: 50%
+                transition: all 0.5s ease
+                // @media screen and (max-width: 991px)
+                left: calc(50% - 8px)
+                top: 10px
+                @media screen and (max-width: 614px)
+                    left: 0
+            .timelineTitle
+                .title
+                    +typography(24px, 500, map-get($basic, 'black'))
+                    margin: 10px 0
+                    transition: all 0.5s ease
+                    @media screen and (max-width: 1150px)
+                        font-size: 18px
+            .timelineText
+                border-radius: 5px
+                .text
+                    margin: 0
+                    +typography(16px, 400, map-get($palete, 'textBlack'))
+                    @media screen and (max-width: 1150px)
+                        font-size: 12px

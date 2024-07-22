@@ -1,0 +1,102 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.welcomeToFest
+    padding: 50px 0
+    .welcomeContainer
+        width: 100%
+        .welcomeTitle
+            text-align: center
+            margin-bottom: 30px
+            .title
+                +typography(48px, 600, map-get($palete, 'primary'))
+                @media screen and (max-width: 1100px)
+                    font-size: 32px
+        .welcomeCard
+            display: flex
+            width: 100%
+            position: relative
+            height: 600px
+            @media screen and (max-width: 850px)
+                height: 800px
+                flex-direction: column
+            .itemNumber
+                position: absolute
+                left: 0
+                right: 0
+                top: 0
+                bottom: 0
+                z-index: 1
+                margin: auto
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                text-align: center
+                .number
+                    +typography(64px, 600, map-get($palete, 'whiteGray'))
+                    @media screen and (max-width: 1100px)
+                        font-size: 32px
+                .black
+                    +typography(64px, 600, map-get($palete, 'primary'))
+                    @media screen and (max-width: 1100px)
+                        font-size: 32px
+            .cardItem
+                width: 100%
+                background: map-get($palete, 'primary')
+                display: flex
+                align-items: center
+                @media screen and (max-width: 850px)
+                    height: 50%
+                .itemContent
+                    padding: 50px
+                    .itemTitle
+                        .title
+                            +typography(48px, 600, map-get($palete, 'whiteGray'))
+                            @media screen and (max-width: 1100px)
+                                font-size: 32px
+                            @media screen and (max-width: 450px)
+                                font-size: 24px
+                    .itemSubtitle
+                        .subtitle
+                            +typography(20px, 500, map-get($palete, 'whiteGray'))
+                            line-height: 140%
+                            @media screen and (max-width: 1100px)
+                                font-size: 18px
+                    .btn
+                        position: relative
+                        z-index: 2
+                        border: 1px solid map-get($palete, 'whiteGray')
+                        color: map-get($palete, 'whiteGray')
+                        &:hover
+                            background: map-get($palete, 'secondary')
+                            border: 1px solid map-get($palete, 'secondary')
+            .white
+                background: map-get($palete, 'whiteGray')
+                .itemContent
+                    padding: 50px
+                    .itemTitle
+                        .title
+                            +typography(48px, 600, map-get($palete, 'textBlack'))
+                            @media screen and (max-width: 1100px)
+                                font-size: 32px
+                    .itemSubtitle
+                        .subtitle
+                            +typography(20px, 500, map-get($palete, 'textBlack'))
+                            @media screen and (max-width: 1100px)
+                                font-size: 18px
+                    .btn
+                        position: relative
+                        border: 1px solid map-get($palete, 'textBlack')
+                        color: map-get($palete, 'textBlack')
+                        z-index: 2
+                        &:hover
+                            background: map-get($palete, 'secondary')
+                            border: 1px solid map-get($palete, 'secondary')
+                            color: map-get($palete, 'whiteGray')
+            .imgeContainer
+                height: 100%
+                width: 100%
+                .img
+                    height: 100%
+                    width: 100%
+                    object-fit: cover

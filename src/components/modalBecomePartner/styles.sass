@@ -1,0 +1,25 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.modalBecomeAMember
+    .ant-modal-footer
+        display: none
+    .contactsForm
+        border-radius: 20px
+        padding: 24px 20px
+        display: flex
+        flex-direction: column
+        row-gap: 20px
+        .inputBox
+            width: 100%
+            .input
+                width: 100%
+                border: none
+                padding: 6px 0
+                margin-top: 6px
+                border-bottom: 1px solid map-get($palete, 'textBlack')
+                &::placeholder
+                    +typography(16px, 400, map-get($palete, 'textBlack'))
+                &:focus
+                    outline: none
+        .btn
+            width: 100%

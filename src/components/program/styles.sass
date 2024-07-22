@@ -1,0 +1,38 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.programBLock
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($palete, 'whiteGray')
+    padding: 50px 0
+    .programBlockCard
+        display: flex
+        align-items: center
+        flex-direction: row
+        column-gap: 20px
+        width: 100%
+        @media screen and (max-width: 850px)
+            flex-direction: column
+            row-gap: 20px
+        .cardItem
+            width: 50%
+            @media screen and (max-width: 850px)
+                width: 100%
+                padding: 20px
+            .imgeContainer
+                .img
+                    width: 100%
+                    max-height: 500px
+                    object-fit: cover
+            .itemContent
+                .itemTitle
+                    .title
+                        +typography(32px, 600, map-get($palete, 'primary'))
+                        @media screen and (max-width: 450px)
+                            font-size: 24px
+                .itemSubtitle
+                    .subtitle
+                        +typography(20px, 500, map-get($palete, 'textBlack'))
+                        line-height: 140%
+                        @media screen and (max-width: 450px)
+                            font-size: 16px

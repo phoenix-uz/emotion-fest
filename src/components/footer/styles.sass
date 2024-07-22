@@ -1,0 +1,83 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.footer
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($basic, 'white')
+    padding: 50px 0
+    border-top: 1px solid map-get($palete, 'primary')
+    .footerContainer
+        display: flex
+        justify-content: space-between
+        @media screen and (max-width: 850px)
+            flex-wrap: wrap
+            row-gap: 20px
+        .footerLogoInfo
+            width: 33.33333%
+            @media screen and (max-width: 850px)
+                width: 40%
+            @media screen and (max-width: 450px)
+                width: 100%
+            .footerLogo
+            .footerText
+                .text
+                    +typography(14px, 400, map-get($palete, 'textGray'))
+            .footerLinksBox
+                display: flex
+                column-gap: 12px
+                .footerLinkIcon
+                    background: map-get($palete, 'whiteGray')
+                    width: 34px
+                    height: 34px
+                    border-radius: 20px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    cursor: pointer
+                    transition: all 0.5s ease
+                    svg
+                        transition: all 0.5s ease
+                        color: map-get($basic, 'balck')
+                    &:hover
+                        svg
+                            color: map-get($palete, 'primary')
+        .footerNavInfo
+            // width: 33.33333%
+            @media screen and (max-width: 450px)
+                width: 100%
+            .navTitle
+                .title
+                    +typography(18px, 600, map-get($palete, 'textBlack'))
+            .navBody
+                margin-top: 30px
+                display: flex
+                flex-direction: column
+                row-gap: 10px
+                .link
+                    text-decoration: none
+                    transition: all 0.5s ease
+                    +typography(14px, 700, map-get($palete, 'textGray'))
+                    &:hover
+                        color: map-get($palete, 'primary')
+        .footerContactsInfo
+            width: 33.33333%
+            @media screen and (max-width: 850px)
+                width: 40%
+            @media screen and (max-width: 450px)
+                width: 100%
+            .contactsInfo
+                .title
+                    +typography(18px, 600, map-get($palete, 'textBlack'))
+            .contactsBox
+                margin-top: 30px
+                display: flex
+                flex-direction: column
+                row-gap: 10px
+                .contactsBoxItem
+                    display: flex
+                    align-items: center
+                    column-gap: 8px
+                    .contactstext
+                        .text
+                            margin: 0
+                            +typography(14px, 400, map-get($palete, 'textGray'))

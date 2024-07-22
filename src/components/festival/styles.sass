@@ -1,0 +1,47 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.festival
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($palete, 'whiteGray')
+    padding: 50px 0
+    .festivalImage
+        position: relative
+        .img
+            width: 100%
+            object-fit: cover
+            border-radius: 10px
+        .festivalText
+            position: absolute
+            bottom: 0
+            top: 0
+            left: 0
+            right: 0
+            margin: auto
+            text-align: center
+            width: 50%
+            height: 100%
+            border-radius: 10px 10px 0 0
+            display: flex
+            align-items: center
+            @media screen and (max-width: 1200px)
+                display: flex
+                align-items: center
+                justify-content: center
+            @media screen and (max-width: 850px)
+                width: 100%
+                height: 70px
+            .text
+                +typography(32px, 500, map-get($basic, 'white'))
+                display: flex
+                align-items: center
+                justify-content: center
+                background: map-get($palete, 'primary')
+                height: 50%
+                padding: 20px
+                border-radius: 20px
+                @media screen and (max-width: 1200px)
+                    font-size: 24px
+                @media screen and (max-width: 450px)
+                    font-size: 20px
+                    margin: 0

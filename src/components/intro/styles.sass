@@ -1,0 +1,146 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.into
+    scroll-behavior: smooth
+    .introContainer
+        display: flex
+        flex-direction: column
+        row-gap: 20px
+        padding-bottom: 50px
+        .introMainInfo
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            @media screen and (max-width: 850px)
+                flex-direction: column
+                row-gap: 20px
+            .introInfo
+                width: 100%
+                .introTitle
+                    .title
+                        +typography(72px, 600, map-get($palete, 'primary'))
+                        @media screen and (max-width: 1350px)
+                            font-size: 64px
+                        @media screen and (max-width: 1100px)
+                            font-size: 42px
+                    @media screen and (max-width: 850px)
+                        text-align: center
+                .introSubtitle
+                    .subtitle
+                        +typography(24px, 500, map-get($palete, 'textGray'))
+                        @media screen and (max-width: 1350px)
+                            font-size: 20px
+                        @media screen and (max-width: 1100px)
+                            font-size: 18px
+                    @media screen and (max-width: 850px)
+                        text-align: center
+                .introButtonsGroup
+                    display: flex
+                    align-items: center
+                    column-gap: 20px
+                    @media screen and (max-width: 911px)
+                        flex-direction: column-reverse
+                        align-items: flex-start
+                        row-gap: 20px
+                    @media screen and (max-width: 850px)
+                        text-align: center
+                        justify-content: center
+                        align-items: center
+                    .btn
+                        background: map-get($palete, 'secondary')
+                        color: map-get($basic, 'white')
+                        border: 1px solid map-get($palete, 'secondary')
+                        &:hover
+                            background: map-get($palete, 'primary')
+                    .introLink
+                        .link
+                            line-height: 140%
+                            +typography(24px, 500, map-get($palete, 'textBlack'))
+                            transition: all 0.5s ease
+                            &:hover
+                                color: map-get($palete, 'primary')
+                            @media screen and (max-width: 1350px)
+                                font-size: 20px
+                            @media screen and (max-width: 1100px)
+                                font-size: 18px
+            .infoImage
+                width: 100%
+                height: 320px
+                .img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+                    border-radius: 350px 20px 20px 20px
+        .introBottomInfo
+            display: flex
+            align-items: center
+            justify-content: space-between
+            @media screen and (max-width: 1100px)
+                flex-direction: column-reverse
+                row-gap: 20px
+                justify-content: start
+                align-items: flex-start
+            .partners
+                display: flex
+                column-gap: 20px
+                flex-direction: column
+                width: 100%
+                .partenersContainer
+                    display: flex
+                    align-items: center
+                    column-gap: 20px
+                    @media screen and (max-width: 850px)
+                        flex-direction: column
+                        align-items: flex-start
+                    .partnersTitle
+                        .title
+                            +typography(16px, 600, map-get($palete, 'textBlack'))
+                            @media screen and (max-width: 1100px)
+                                font-size: 14px
+                            @media screen and (max-width: 850px)
+                                font-size: 20px
+                                margin: 20px 0
+                    .partnersSlider
+                        max-width: 400px
+                        @media screen and (max-width: 850px)
+                            max-width: 100%
+                .btn
+                    margin-top: 20px
+            .winnerBlock
+                max-width: 600px
+                @media screen and (max-width: 1350px)
+                    max-width: 450px
+                @media screen and (max-width: 1100px)
+                    max-width: 400px
+                @media screen and (max-width: 850px)
+                    max-width: 100%
+                .winnerTitle
+                    .title
+                        +typography(84px, 700, map-get($palete, 'primary'))
+                        @media screen and (max-width: 1350px)
+                            font-size: 72px
+                        @media screen and (max-width: 1100px)
+                            font-size: 64px
+                .winnerSubtitle
+                    .subTitle
+                        +typography(24px, 900, map-get($palete, 'textBlack'))
+                        @media screen and (max-width: 1350px)
+                            font-size: 20px
+                        @media screen and (max-width: 1100px)
+                            font-weight: 600
+                .line
+                    width: 100%
+                    height: 5px
+                    background: map-get($palete, 'textGray')
+                    color: map-get($palete, 'textGray')
+                    display: block
+                    position: relative
+                    &::before
+                        content: ''
+                        width: 70%
+                        height: 5px
+                        position: absolute
+                        background: map-get($palete, 'primary')
+                        z-index: 1

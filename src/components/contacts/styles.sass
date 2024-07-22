@@ -1,0 +1,66 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.sectionContacts
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($palete, 'whiteGray')
+    padding: 50px 0
+    .contactsContainer
+        display: flex
+        flex-direction: row
+        column-gap: 30px
+        align-items: center
+        @media screen and (max-width: 850px)
+            flex-direction: column
+            row-gap: 30px
+        .contactsInfo
+            width: 50%
+            .contactsTitle
+                // text-align: center
+                .title
+                    +typography(40px, 700, map-get($palete, 'primary'))
+                    @media screen and (max-width: 1350px)
+                        font-size: 36px
+                    @media screen and (max-width: 850px)
+                        font-size: 28px
+                    @media screen and (max-width: 450px)
+                        font-size: 24px
+            @media screen and (max-width: 850px)
+                width: 100%
+            .contactsText
+                // text-align: center
+                .text
+                    line-height: 140%
+                    +typography(24px, 400, map-get($palete, 'textBlack'))
+                    @media screen and (max-width: 1350px)
+                        font-size: 20px
+                    @media screen and (max-width: 850px)
+                        font-size: 18px
+                    @media screen and (max-width: 450px)
+                        font-size: 18px
+        .contactsForm
+            width: 50%
+            box-shadow: 0px 0px 12px 12px rgba(63, 63, 63, 0.1)
+            background: map-get($basic, 'white')
+            border-radius: 20px
+            width: 570px
+            padding: 24px 20px
+            display: flex
+            flex-direction: column
+            row-gap: 20px
+            @media screen and (max-width: 850px)
+                width: 100%
+            .inputBox
+                width: 100%
+                .input
+                    width: 100%
+                    border: none
+                    padding: 6px 0
+                    margin-top: 6px
+                    border-bottom: 1px solid map-get($palete, 'textBlack')
+                    &::placeholder
+                        +typography(16px, 400, map-get($palete, 'textBlack'))
+                    &:focus
+                        outline: none
+            .btn
+                width: 100%
