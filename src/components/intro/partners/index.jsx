@@ -45,11 +45,12 @@ const PartnersSlider = () => {
         {PartnersSlideImages.map((item, index) => (
           <SwiperSlide key={index}>
             <div className='imagesBlock'>
-              <img
+              {/* <img
                 src={item.img}
                 alt={item.alt}
                 className='img'
-              />
+              /> */}
+              <p className='text'>Ваш логотип</p>
             </div>
           </SwiperSlide>
         ))}

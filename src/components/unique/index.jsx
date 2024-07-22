@@ -4,7 +4,10 @@ import Link from "next/link";
 
 const Unique = () => {
   return (
-    <div className='unique'>
+    <div
+      className='unique'
+      id='unique'
+    >
       <div className='container'>
         <div className='uniqueContainer'>
           <div className='uniqueItem'>

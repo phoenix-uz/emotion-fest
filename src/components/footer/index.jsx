@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import "./styles.sass";
 import Image from "next/image";
-import { FaFacebookF, FaLocationDot } from "react-icons/fa6";
-import { FaTwitter, FaLinkedinIn, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaInstagram, FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 const Footer = () => {
   return (
@@ -38,13 +38,7 @@ const Footer = () => {
             </div> */}
             <div className='footerLinksBox'>
               <div className='footerLinkIcon'>
-                <FaFacebookF />
-              </div>
-              <div className='footerLinkIcon'>
-                <FaTwitter />
-              </div>
-              <div className='footerLinkIcon'>
-                <FaLinkedinIn />
+                <FaTelegramPlane />
               </div>
               <div className='footerLinkIcon'>
                 <FaInstagram />
@@ -105,9 +99,12 @@ const Footer = () => {
                 <div className='contactsIcon'>
                   <IoMail />
                 </div>
-                <div className='contactstext'>
+                <Link
+                  href='https://www.google.com/maps/place/Axelon+Karting+Club/@41.3281093,69.2649548,17.56z/data=!4m6!3m5!1s0x38ae8b4183b90cf3:0x856f6a9d7b3b76fb!8m2!3d41.3281368!4d69.2666474!16s%2Fg%2F11c1rt72wv?entry=ttu'
+                  className='contactstext'
+                >
                   <p className='text'>Hey@boostim.com</p>
-                </div>
+                </Link>
               </div>
               <div className='contactsBoxItem'>
                 <div className='contactsIcon'>

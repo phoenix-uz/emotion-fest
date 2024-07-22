@@ -7,7 +7,7 @@ const WelcomeToFest = () => {
     <div className='welcomeToFest'>
       <div className='welcomeContainer'>
         <div className='welcomeTitle'>
-          <h2 className='title'>Приходи на фест</h2>
+          <h2 className='title'>Приходите на фест</h2>
         </div>
         <div className='welcomeCard'>
           <div className='cardItem'>

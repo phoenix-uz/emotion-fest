@@ -20,7 +20,7 @@ const NavBar = ({ burgerIsOpen }) => {
           <div className='links'>
             <Link
               className='navLink'
-              href='./'
+              href='#unique'
             >
               E-motion фест
             </Link>
