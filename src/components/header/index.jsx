@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "../NavBar";
-import Button from "../UI/Button";
+import Button from "../UI/button";
 import { FaLocationDot } from "react-icons/fa6";
 
 import "./styles.sass";
