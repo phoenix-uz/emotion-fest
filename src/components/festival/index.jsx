@@ -6,7 +6,7 @@ const Festival = () => {
       <div className='container'>
         <div className='festivalImage'>
           <img
-            src='/festival.jpg'
+            src='/manOnAction.jpeg'
             alt='festivalimage'
             className='img'
           />

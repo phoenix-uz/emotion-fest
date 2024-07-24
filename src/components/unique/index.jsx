@@ -28,7 +28,7 @@ const Unique = () => {
           <div className='uniqueItem itemBottom'>
             <div className='imageUniqueBlock littleImage'>
               <img
-                src='/cars.png'
+                src='/unicCard.jpeg'
                 alt='cars'
                 className='img'
               />
