@@ -12,7 +12,7 @@ const ProgramBLock = () => {
         <div className='cardItem'>
           <div className='imgeContainer'>
             <img
-              src='/opneTakl.png'
+              src='/open.jpg'
               alt='welcomeFirstImage'
               className='img'
             />

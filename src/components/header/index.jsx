@@ -36,7 +36,7 @@ const Header = ({ bgBlack }) => {
               className='headerLogo'
             >
               <Image
-                src='/emotionLogo.svg'
+                src='/Logo.svg'
                 alt='emotionLogo'
                 className='logo'
                 width={50}

@@ -47,7 +47,7 @@ const Unique = () => {
             </div>
             <div className='imageUniqueBlock maxImage'>
               <img
-                src='/uniqueImage.png'
+                src='/carImage.jpg'
                 alt='uniqueImage'
                 className='img'
               />

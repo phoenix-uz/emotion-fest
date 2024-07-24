@@ -38,8 +38,31 @@
             display: flex
             align-items: center
             justify-content: center
+            flex-direction: column
+            row-gap: 20px
             backdrop-filter: blur(9px)
             border-radius: 20px
+            .footerLinksBox
+                display: flex
+                flex-direction: row
+                column-gap: 10px
+                .footerLinkIcon
+                    width: 40px
+                    height: 40px
+                    background: map-get($palete, 'whiteGray')
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 20px
+                    transition: all 0.5s ease
+                    cursor: pointer
+                    svg
+                        transition: all 0.5s ease
+                        color: map-get($palete, 'textBlack')
+                        font-size: 24px
+                    &:hover
+                        svg
+                            color: map-get($palete, 'primary')
             .title
                 max-width: 700px
                 text-align: center
