@@ -52,7 +52,7 @@ const Header = ({ bgBlack }) => {
             <NavBar burgerIsOpen={burgerIsOpen} />
           </div>
           <div className='headerButton'>
-            <Button onClick={() => setModal2Open(true)}>Стать учасником</Button>
+            <Button onClick={() => setModal2Open(true)}>Стать участником</Button>
             <Modal
               // title='Vertically centered modal dialog'
               centered
